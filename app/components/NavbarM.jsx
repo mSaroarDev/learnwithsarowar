@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <>
-      <div className="w-full fixed z-50 top-0">
+      <div className="w-full fixed z-50 top-0 bg-[#0A1F33]">
         <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
@@ -30,21 +30,41 @@ export default function Navbar() {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <a>Item 1</a>
+                  <a>হোম</a>
                 </li>
                 <li>
-                  <a>Parent</a>
-                  <ul className="p-2">
-                    <li>
-                      <a>Submenu 1</a>
-                    </li>
-                    <li>
-                      <a>Submenu 2</a>
-                    </li>
-                  </ul>
+                  <a>আমার সম্পর্কে</a>
                 </li>
                 <li>
-                  <a>Item 3</a>
+                  <a>পোর্টফোলিও</a>
+                </li>
+                <li tabIndex={0}>
+                  <details>
+                    <summary>সার্ভিসেস</summary>
+                    <ul className="p-2">
+                      <li>
+                        <a>ওয়েব ডিজাইন</a>
+                      </li>
+                      <li>
+                        <a>ফ্রন্টএন্ড ডেভেলপমেন্ট</a>
+                      </li>
+                      <li>
+                        <a>ওয়ার্ডপ্রেস</a>
+                      </li>
+                      <li>
+                        <a>ই-কমার্স</a>
+                      </li>
+                      <li>
+                        <a>পোর্টফোলিও ডিজাইন</a>
+                      </li>
+                      <li>
+                        <a>ল্যান্ডিং পেজ ডিজাইন</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <a>যোগাযোগ</a>
                 </li>
               </ul>
             </div>
@@ -53,48 +73,70 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
+            <ul className="menu menu-horizontal px-1 font-fontBn text-base font-semibold text-white hover:text-white ">
               <li>
-                <a>Home</a>
+                <Link href="/" className="hover:underline hover:text-white">
+                  হোম
+                </Link>
               </li>
               <li>
-                <a>About</a>
+                <Link href="/" className="hover:underline hover:text-white">
+                  আমার সম্পর্কে
+                </Link>
               </li>
               <li>
-                <a>Portfolio</a>
+                <Link href="/" className="hover:underline hover:text-white">
+                  পোর্টফোলিও
+                </Link>
               </li>
               <li tabIndex={0}>
                 <details>
-                  <summary>Services</summary>
+                  <summary className="hover:underline hover:text-white">
+                    সার্ভিসেস
+                  </summary>
                   <ul className="p-2">
                     <li>
-                      <a>Web Design</a>
+                      <Link href="/" className="hover:underline text-[#0A1F33]">
+                        ওয়েব ডিজাইন
+                      </Link>
                     </li>
                     <li>
-                      <a>Frontend Development</a>
+                      <Link href="/" className="hover:underline text-[#0A1F33]">
+                        ফ্রন্টএন্ড ডেভেলপমেন্ট
+                      </Link>
                     </li>
                     <li>
-                      <a>Wordpress</a>
+                      <Link href="/" className="hover:underline text-[#0A1F33]">
+                        ওয়ার্ডপ্রেস
+                      </Link>
                     </li>
                     <li>
-                      <a>Ecommerce</a>
+                      <Link href="/" className="hover:underline text-[#0A1F33]">
+                        ই-কমার্স
+                      </Link>
                     </li>
                     <li>
-                      <a>Portfolio Design</a>
+                      <Link href="/" className="hover:underline text-[#0A1F33]">
+                        পোর্টফোলিও ডিজাইন
+                      </Link>
                     </li>
                     <li>
-                      <a>Landing Page Design</a>
+                      <Link href="/" className="hover:underline text-[#0A1F33]">
+                        ল্যান্ডিং পেজ ডিজাইন
+                      </Link>
                     </li>
                   </ul>
                 </details>
               </li>
               <li>
-                <a>Contact</a>
+                <Link href="/" className="hover:underline hover:text-white">
+                  যোগাযোগ
+                </Link>
               </li>
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="btn">Tutorials</a>
+            <a className="btn font-fontBn">টিউটোরিয়ালস</a>
           </div>
         </div>
       </div>
