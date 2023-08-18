@@ -136,7 +136,9 @@ export default function Navbar() {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="btn font-fontBn">টিউটোরিয়ালস</a>
+            <Link href="/tutorial" className="btn font-fontBn">
+              টিউটোরিয়ালস
+            </Link>
           </div>
         </div>
       </div>
