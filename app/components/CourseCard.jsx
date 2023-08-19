@@ -6,7 +6,7 @@ const CourseCard = ({ courseCard }) => {
 
   return (
     <>
-      <div className="card h-40 w-52 bg-white rounded-md p-4 shaddow-md font-fontBn hover:bg-purple-600 hover:text-white hover:scale-110 cursor-pointer duration-300">
+      <div className="card h-40 w-60 bg-white rounded-md p-4 shaddow-md font-fontBn hover:bg-purple-600 hover:text-white hover:scale-110 cursor-pointer duration-300">
         <p className="icon text-4xl mb-4">
           <FaReact />
         </p>

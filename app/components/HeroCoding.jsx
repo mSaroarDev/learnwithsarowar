@@ -3,9 +3,9 @@ import Demo from "../../public/demo.gif";
 
 export default function HeroCoding() {
   return (
-    <div className="h-screen w-full flex items-center justify-center ">
+    <div className="h-screen w-full flex items-center justify-center">
       <Image
-        className="rounded-xl"
+        className="rounded-xl cursor-text"
         src={Demo}
         height={500}
         width={700}
