@@ -31,10 +31,18 @@ export default function Courses() {
   return (
     <section className="bg-gray-100 py-24">
       <main className="content">
-        <h1 className="text-2xl font-bold font-fontBn mb-6">কোর্সসমুহ</h1>
-        <div className="flex justify-between items-center">
+        <h1 className="text-2xl font-bold font-fontBn mb-6 p-5">কোর্সসমুহ</h1>
+        <div className="flex flex-wrap justify-center items-center">
           {courseCardArray.map((courseCard, index) => {
-            return <CourseCard key={index} courseCard={courseCard} />;
+            return (
+              <div
+                key={index}
+                className="w-full md:w-1/2 lg:w-1/4 p-5"
+                // Adjust the above classes for spacing as needed
+              >
+                <CourseCard courseCard={courseCard} />
+              </div>
+            );
           })}
         </div>
       </main>

@@ -9,7 +9,10 @@ export default function Navbar() {
         <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
-              <label tabIndex={0} className="btn btn-ghost lg:hidden">
+              <label
+                tabIndex={0}
+                className="btn btn-ghost lg:hidden text-white"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -69,12 +72,12 @@ export default function Navbar() {
               </ul>
             </div>
             <Link href="/">
-              <Image src={Logo} alt="Logo" height={100} width={250} />
+              <Image src={Logo} alt="Logo" height={100} width={300} />
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 font-fontBn text-base font-semibold text-white hover:text-white ">
-              <li>
+              <li className="font-fontBn">
                 <Link href="/" className="hover:underline hover:text-white">
                   হোম
                 </Link>
